@@ -27,20 +27,52 @@ img {
   width: 1240px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1240px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 2561px) {
+  .container {
+    width: 1800px;
+  }
+}
+
 .titles {
   margin: 0 auto;
   text-align: center;
   color: #ffffff;
   text-shadow: 1px 1px 5px black;
 }
+@media screen and (min-width: 1800px) and (max-width: 2561px) {
+  .titles {
+    font-size: 70px;
+  }
+}
 .mainTitle {
   font-size: 50px;
   margin-top: 40px;
+}
+@media screen and (min-width: 1800px) and (max-width: 2561px) {
+  .mainTitle {
+    font-size: 100px;
+  }
 }
 .backgroundsGenerator {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 1240px) {
+  .backgroundsGenerator {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .backgroundsGenerator a {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
 }
 .bgTitle {
   margin-top: 100px;
@@ -51,6 +83,11 @@ img {
   max-width: 320px;
   text-shadow: 1px 1px 5px black;
 }
+@media screen and (min-width: 1800px) and (max-width: 2561px) {
+  .bgContent {
+    max-width: 500px;
+  }
+}
 .bgContent span {
   display: flex;
   justify-content: center;
@@ -59,6 +96,12 @@ img {
   background-color: green;
   padding: 10px 0px;
   transition: 0.2s ease-in-out;
+}
+@media screen and (min-width: 1800px) and (max-width: 2561px) {
+  .bgContent span {
+    font-size: 50px;
+    text-align: center;
+  }
 }
 .bgContentSubtitle:hover {
   transition: 0.2s ease-in-out;
