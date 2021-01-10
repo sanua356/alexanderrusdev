@@ -1,0 +1,66 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(unnamed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+* {
+  font-family: "Staatliches", cursive;
+}
+a {
+  list-style: none;
+  color: #ffffff;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.titles {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px black;
+}
+.mainTitle {
+  font-size: 50px;
+  margin-top: 40px;
+}
+.backgroundsGenerator {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bgTitle {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-shadow: 3px 3px 5px black;
+}
+.bgContent {
+  max-width: 320px;
+  text-shadow: 1px 1px 5px black;
+}
+.bgContent span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: green;
+  padding: 10px 0px;
+  transition: 0.2s ease-in-out;
+}
+.bgContentSubtitle:hover {
+  transition: 0.2s ease-in-out;
+  background-color: red;
+}

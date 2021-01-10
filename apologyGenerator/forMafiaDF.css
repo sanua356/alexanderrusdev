@@ -1,0 +1,13 @@
+.textMainScreenOutput {
+  color: #ffffff;
+  padding-top: 18%;
+  line-height: 1.4em;
+  font-size: 19px;
+}
+.textMainScreenOutput span {
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.auxiliaryButtons {
+  flex-wrap: wrap;
+}

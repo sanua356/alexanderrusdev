@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="forMafiaDF.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Генератор обращений разработчиков</title>
+    <script src="libs/html2canvas.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="mainTitle">Генератор обращений разработчиков</h1>
+        </div>  
+    </header>
+    <section>
+        <div class="container">
+            <div class="mainScreen" id="saveResultScreen">
+                <img src="mafiaDFbg.jpg" alt="Mafia Definitive Edition Background">
+                <div class="textMainScreen">
+                    <div class="textMainScreenOutput">
+                        Mafia: Definitive Edition will now release worldwide on September 25. Though we'd originally planned to release the game one
+                        month earlier on August 28, finalizing everything in time for that launch date has become increasingly challenging due to the
+                        ongoing global COVID-19 pandemic, and the last thing we want to do is compromise the quality of the experience.
+                    </br>
+                    </br>
+                        From the beginning, this has been a passion project for us. Many of our developers helped create the original Mafia, and all of us
+                        are committed to crafting an updated experience worthy of that timeless classic. We appreciate your patience and understanding as
+                        we make Mafia: Definitive Edition the very best it can be for all of our fans worldwide.
+                    </br>
+                    </br>
+                        All that said, we know you're anxious to see more. That's why we're thrilled to give you an extended look at
+                        Mafia: Definitive Edition's gameplay in just two weeks on July 22. Be sure to follow <span style="color: red;">@MafiaGame</span> on Twitter to see a brand new
+                        15-second teaser now, and visit <span style="color: red;">MafiaGame.com</span> for more information about the entire Mafia: Trilogy.
+                    </br>
+                    </br>
+                        We want to express our heartfelt thanks to you for watching our narrative trailer, playing the Definitive Editions of Mafia II and III,
+                        and supporting us as we continue building the definitive organized crime saga. We look forward to showing you more on July 22.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="textAreaScrenTitle">Поле ввода текста: </div>
+            <div class="textAreaScreen">
+                <textarea id="textAreaScreenInput" placeholder="Сюда введите текст, который хотите вставить вместо обращения разработчиков.">
+Mafia: Definitive Edition will now release worldwide on September 25. Though we'd originally planned to release the game one
+month earlier on August 28, finalizing everything in time for that launch date has become increasingly challenging due to the
+ongoing global COVID-19 pandemic, and the last thing we want to do is compromise the quality of the experience.
+</br>
+</br>
+From the beginning, this has been a passion project for us. Many of our developers helped create the original Mafia, and all of us
+are committed to crafting an updated experience worthy of that timeless classic. We appreciate your patience and understanding as
+we make Mafia: Definitive Edition the very best it can be for all of our fans worldwide.
+</br>
+</br>
+All that said, we know you're anxious to see more. That's why we're thrilled to give you an extended look at
+Mafia: Definitive Edition's gameplay in just two weeks on July 22. Be sure to follow <span style="color: red;">@MafiaGame</span> on Twitter to see a brand new
+15-second teaser now, and visit <span style="color: red;">MafiaGame.com</span> for more information about the entire Mafia: Trilogy.
+</br>
+</br>
+We want to express our heartfelt thanks to you for watching our narrative trailer, playing the Definitive Editions of Mafia II and III,
+and supporting us as we continue building the definitive organized crime saga. We look forward to showing you more on July 22.
+</textarea>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="auxiliaryButtonsTitle">Вспомогательные кнопки:</h2>
+            <div class="auxiliaryButtons">
+                <div class="auxiliaryButton buttonClickable" id="newString">
+                    <article>Перенос на новую строку</article>
+                </div>
+                <div class="fontSizeRange auxiliaryButton">
+                    <article>Размер шрифта</article>
+                    <div class="fontSizeRangeValueSpan">
+                        <input type="range" min="15" max="30" value="19" id="fontSizeRange">
+                        <span id="fontSizeRangeValue">19</span>
+                    </div>
+                </div>
+                <a href="#" id="download" class="saveImg">
+                    <div class="auxiliaryButton buttonClickable" id="saveImg">
+                        <article> Сохранить готовое изображение</article>
+                    </div>
+                </a>
+                <div class="letterSpacingRange auxiliaryButton">
+                    <article>Интервал между буквами</article>
+                    <div class="letterSpacingRangeValueSpan">
+                        <input type="range" min="0" max="20" value="0" id="letterSpacingRange">
+                        <span id="letterSpacingRangeValue">0</span>
+                    </div>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="boldString">
+                    <article>Вставка текста с жирным шрифтом</article>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="redText">
+                    <article> Добавить текст <span style="color: red;">красного цвета</span></article>
+                </div>
+            </div>
+            <h2 class="warning">!!!Изменения в готовый файл вносятся с запозданием.!!! </br>
+                Прежде чем скачать готовую картинку подождите около 10-30 секунд после окончания набора текста. </br>
+                Эта мера нужна для увеличения скорости загрузки сайта   ;)</h2>
+                <canvas>Извините, ваш браузер не поддерживается :(</canvas>
+        </div>
+        <a href="index.html" class="goHome">На главную</a>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="infoAuthor">
+                <h3>Site created by <a href="https://vk.com/alexanderpankratov03">Alexander Pankratov</a></h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="libs/jspdf.debug.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $("#redText").on("click", function(){
+  textAreaInput.value += "<span style='color: red;'>Текст красного цвета</span>";
+  textAreaInputValue = textAreaInput.value;
+  textAreaOutput.innerHTML = textAreaInputValue;
+});
+    </script>
+</body>
+</html>

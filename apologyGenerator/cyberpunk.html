@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Генератор обращений разработчиков</title>
+    <script src="libs/html2canvas.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="mainTitle">Генератор обращений разработчиков</h1>
+        </div>  
+    </header>
+    <section>
+        <div class="container">
+            <div class="mainScreen" id="saveResultScreen">
+                <img src="src/cyberpunk-.jpeg" alt="">
+                <div class="textMainScreen">
+                    <div class="textMainScreenOutput">
+                        <strong>Dear gamers,</strong>
+                    </br>
+                    </br>
+                    First of all, we would like to start by apologizing to you for not showing the game on base last-gen consoles before it premiered and, in
+                    consequence, not allowing you to make a more informed decision about your purchase. We should have paid more attention to making it play
+                    better on PlayStation 4 and Xbox One.
+                    </br>
+                    </br>
+                    Second, we will fix bugs and crashes, and improve the overall experience. The first round of updates has just been released and the next
+                    one is coming within the next 7 days. Expect more, as we will update frequently whenever no improvements are ready. After the holidays,
+                    we'll continue working — we'll release two large patches starting with Patch #1 in January. This will be followed by Patch #2 in February.
+                    Together these should fix the most prominent problems gamers are facing on last-gen consoles. We will be informing you about the
+                    contents of each patch ahead of their release. They won't make the game on last-gen look like it's running on a high-spec PC or next-gen
+                    console, but it will be closer to that experience than it is now.
+                    </br>
+                    </br>
+                    Finally, we would always like everyone who buys our games to be satisfied with their purchase. We would appreciate it if you would give us a
+                    chance, but if you are not pleased with the game on your console and don't want to wait for updates, you can opt to refund your copy. For
+                    copies purchased digitally, please use the refund system of PSN or Xbox respectively. For boxed versions, please first try to get a refund at
+                    the store where you bought the game. Should this not be possible, please contact us at helpmerefund@cdprojectred.com and we will do our
+                    best to help you. Starting from today, you can contact us for a week up until December 21st, 2020.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="textAreaScrenTitle">Поле ввода текста: </div>
+            <div class="textAreaScreen">
+                <textarea id="textAreaScreenInput" placeholder="Сюда введите текст, который хотите вставить вместо обращения разработчиков.">
+<strong>Dear gamers,</strong>
+</br>
+</br>
+First of all, we would like to start by apologizing to you for not showing the game on base last-gen consoles before it premiered and, in
+consequence, not allowing you to make a more informed decision about your purchase. We should have paid more attention to making it play
+better on PlayStation 4 and Xbox One.
+</br>
+</br>
+Second, we will fix bugs and crashes, and improve the overall experience. The first round of updates has just been released and the next
+one is coming within the next 7 days. Expect more, as we will update frequently whenever no improvements are ready. After the holidays,
+we'll continue working — we'll release two large patches starting with Patch #1 in January. This will be followed by Patch #2 in February.
+Together these should fix the most prominent problems gamers are facing on last-gen consoles. We will be informing you about the
+contents of each patch ahead of their release. They won't make the game on last-gen look like it's running on a high-spec PC or next-gen
+console, but it will be closer to that experience than it is now.
+</br>
+</br>
+Finally, we would always like everyone who buys our games to be satisfied with their purchase. We would appreciate it if you would give us a
+chance, but if you are not pleased with the game on your console and don't want to wait for updates, you can opt to refund your copy. For
+copies purchased digitally, please use the refund system of PSN or Xbox respectively. For boxed versions, please first try to get a refund at
+the store where you bought the game. Should this not be possible, please contact us at helpmerefund@cdprojectred.com and we will do our
+best to help you. Starting from today, you can contact us for a week up until December 21st, 2020.
+</textarea>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="auxiliaryButtonsTitle">Вспомогательные кнопки:</h2>
+            <div class="auxiliaryButtons">
+                <div class="auxiliaryButton buttonClickable" id="newString">
+                    <article>Перенос на новую строку</article>
+                </div>
+                <div class="fontSizeRange auxiliaryButton">
+                    <article>Размер шрифта</article>
+                    <div class="fontSizeRangeValueSpan">
+                        <input type="range" min="15" max="30" value="18" id="fontSizeRange">
+                        <span id="fontSizeRangeValue">18</span>
+                    </div>
+                </div>
+                <a href="#" id="download" class="saveImg">
+                    <div class="auxiliaryButton buttonClickable" id="saveImg">
+                        <article> Сохранить готовое изображение</article>
+                    </div>
+                </a>
+                <div class="letterSpacingRange auxiliaryButton">
+                    <article>Интервал между буквами</article>
+                    <div class="letterSpacingRangeValueSpan">
+                        <input type="range" min="0" max="20" value="0" id="letterSpacingRange">
+                        <span id="letterSpacingRangeValue">0</span>
+                    </div>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="boldString">
+                    <article>Вставка текста с жирным шрифтом</article>
+                </div>
+            </div>
+            <h2 class="warning">!!!Изменения в готовый файл вносятся с запозданием.!!! </br>
+                Прежде чем скачать готовую картинку подождите около 10-30 секунд после окончания набора текста. </br>
+                Эта мера нужна для увеличения скорости загрузки сайта   ;)</h2>
+                <canvas>Извините, ваш браузер не поддерживается :(</canvas>
+        </div>
+        <a href="index.html" class="goHome">На главную</a>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="infoAuthor">
+                <h3>Site created by <a href="https://vk.com/alexanderpankratov03">Alexander Pankratov</a></h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="libs/jspdf.debug.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
