@@ -1,0 +1,16 @@
+.mainScreen img {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.textMainScreenOutput {
+  font-weight: 500;
+  color: #565553;
+  font-size: 15px;
+  text-align: justify;
+  padding-top: 17%;
+  padding-left: 27%;
+  padding-right: 17%;
+  line-height: 1.5em;
+}

@@ -1,0 +1,27 @@
+.mainScreen img {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.textMainScreenOutput {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.8;
+}
+.textMainScreenOutput {
+  font-size: 14px;
+  padding-top: 5%;
+  padding-left: 25%;
+  padding-right: 15%;
+}
+.textMainScreenOutput span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.auxiliaryButtons {
+  flex-wrap: wrap;
+}

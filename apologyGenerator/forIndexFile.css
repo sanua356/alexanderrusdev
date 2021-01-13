@@ -62,11 +62,10 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
-@media screen and (max-width: 1240px) {
-  .backgroundsGenerator {
-    flex-wrap: wrap;
-  }
+.backgroundsGenerator a {
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1240px) {
   .backgroundsGenerator a {

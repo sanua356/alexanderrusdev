@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="forNaugtyDog.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Генератор обращений разработчиков</title>
+    <script src="libs/html2canvas.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="mainTitle">Генератор обращений разработчиков</h1>
+        </div>  
+    </header>
+    <section>
+        <div class="container">
+            <div class="mainScreen" id="saveResultScreen">
+                <img src="img/NaughtyDogBG.jpg" alt="Naughty Dog Background">
+                <div class="textMainScreen">
+                    <div class="textMainScreenOutput">
+ As you've likely just seen, the release of The Last of Us Part Il has been delayed. We're sure this news is just as disappointing to you as it
+is to us. We wanted to reach out to all of you in our community to give you a little more information.
+</br>
+</br>
+The good news is, we're nearly done with development of The Us Part II. We are in the midst of fixing our final bugs.
+</br>
+</br>
+However, even with us finishing the game, we were faced with the reality that due to logistics beyond our control, we couldn't launch
+The Last of Us Part II to our satisfaction. We want to make sure everyone gets to play The Last of Us Part II around the same time,
+ensuring that we're doing everything possible to preserve the best experience for everyone. This meant delaying the game until such a
+time where we can solve these logistic issues.
+</br>
+</br>
+We were bummed about this decision but ultimately understood it's what's best and fair to all of our players. We're hoping that this won't
+be a long delay and we'll update you as soon as we have new information to share.
+</br>
+</br>
+We wish you all, your families, and your friends the best of health. Thank you for being amazing ans and your continued support.
+Stay safe!
+</br>
+</br>
+<span style="float: right;">- Naughty Dog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="textAreaScrenTitle">Поле ввода текста: </div>
+            <div class="textAreaScreen">
+                <textarea id="textAreaScreenInput" placeholder="Сюда введите текст, который хотите вставить вместо обращения разработчиков.">
+ As you've likely just seen, the release of The Last of Us Part Il has been delayed. We're sure this news is just as disappointing to you as it
+is to us. We wanted to reach out to all of you in our community to give you a little more information.
+</br>
+</br>
+The good news is, we're nearly done with development of The Us Part II. We are in the midst of fixing our final bugs.
+</br>
+</br>
+However, even with us finishing the game, we were faced with the reality that due to logistics beyond our control, we couldn't launch
+The Last of Us Part II to our satisfaction. We want to make sure everyone gets to play The Last of Us Part II around the same time,
+ensuring that we're doing everything possible to preserve the best experience for everyone. This meant delaying the game until such a
+time where we can solve these logistic issues.
+</br>
+</br>
+We were bummed about this decision but ultimately understood it's what's best and fair to all of our players. We're hoping that this won't
+be a long delay and we'll update you as soon as we have new information to share.
+</br>
+</br>
+We wish you all, your families, and your friends the best of health. Thank you for being amazing ans and your continued support.
+Stay safe!
+</br>
+</br>
+<span style="float: right;">- Naughty Dog</span>
+</textarea>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="auxiliaryButtonsTitle">Вспомогательные кнопки:</h2>
+            <div class="auxiliaryButtons">
+                <div class="auxiliaryButton buttonClickable" id="newString">
+                    <article>Перенос на новую строку</article>
+                </div>
+                <div class="fontSizeRange auxiliaryButton">
+                    <article>Размер шрифта</article>
+                    <div class="fontSizeRangeValueSpan">
+                        <input type="range" min="10" max="20" value="14" id="fontSizeRange">
+                        <span id="fontSizeRangeValue">14</span>
+                    </div>
+                </div>
+                <a href="#" id="download" class="saveImg">
+                    <div class="auxiliaryButton buttonClickable" id="saveImg">
+                        <article> Сохранить готовое изображение</article>
+                    </div>
+                </a>
+                <div class="letterSpacingRange auxiliaryButton">
+                    <article>Интервал между буквами</article>
+                    <div class="letterSpacingRangeValueSpan">
+                        <input type="range" min="0" max="20" value="0" id="letterSpacingRange">
+                        <span id="letterSpacingRangeValue">0</span>
+                    </div>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="boldString">
+                    <article>Вставка текста с жирным шрифтом</article>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="rightText">
+                    <article>Вставка текста с правого края экрана</article>
+                </div>
+            </div>
+            <h2 class="warning">!!!Изменения в готовый файл вносятся с запозданием.!!! </br>
+                Прежде чем скачать готовую картинку подождите около 10-30 секунд после окончания набора текста. </br>
+                Эта мера нужна для увеличения скорости загрузки сайта   ;)</h2>
+                <canvas>Извините, ваш браузер не поддерживается :(</canvas>
+        </div>
+        <a href="index.html" class="goHome">На главную</a>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="infoAuthor">
+                <h3>Site created by <a href="https://vk.com/alexanderpankratov03">Alexander Pankratov</a></h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="libs/jspdf.debug.js"></script>
+    <script src="main.js"></script>
+    <script>
+         $("#rightText").on("click", function(){
+  textAreaInput.value += "<span style='float: right;'>Текст с правого края экрана</span>";
+  textAreaInputValue = textAreaInput.value;
+  textAreaOutput.innerHTML = textAreaInputValue;
+});
+    </script>
+</body>
+</html>
