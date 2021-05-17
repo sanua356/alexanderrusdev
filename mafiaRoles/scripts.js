@@ -37,7 +37,7 @@ role.addEventListener("click", () => {
         getRoleBtn.innerHTML = "Вы: " + arrayRoles[counter];
         setTimeout(() => {
             getRoleBtn.innerHTML = "Нажмите для получения роли";
-        }, 1000);
+        }, 3000);
         if (counter + 2 <= arrayRoles.length) {
             counter++;
         } else {
