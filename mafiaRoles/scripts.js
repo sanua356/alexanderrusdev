@@ -20,6 +20,8 @@ generatePackRolesBtn.addEventListener("click", () => {
     } else {
         alert("Колода сгенерирована, можете начинать раздачу ролей");
         errorsCheck = true;
+        endOfDistributionFlag = false;
+        getRoleBtn.innerHTML = "Нажмите для получения роли";
     }
 });
 
@@ -31,20 +33,27 @@ function shuffleTheDeck() {
 
 let getRoleBtn = document.getElementById("role");
 let counter = 0;
+let endOfDistributionFlag = false;
+
 
 role.addEventListener("click", () => {
-    if (errorsCheck) {
-        getRoleBtn.innerHTML = "Вы: " + arrayRoles[counter];
-        setTimeout(() => {
-            getRoleBtn.innerHTML = "Нажмите для получения роли";
-        }, 3000);
-        if (counter + 2 <= arrayRoles.length) {
-            counter++;
+    if(!endOfDistributionFlag){
+        if (errorsCheck) {
+            getRoleBtn.innerHTML = "Вы: " + arrayRoles[counter];
+            setTimeout(() => {
+                getRoleBtn.innerHTML = "Нажмите для получения роли";
+            }, 3000);
+            if (counter + 2 <= arrayRoles.length) {
+                counter++;
+            } else {
+                counter = 0;
+                endOfDistributionFlag = true;
+            }
         } else {
-            counter = 0;
+            alert("Ошибка. Колода пуста.");
         }
-    } else {
-        alert("Ошибка. Колода пуста.");
+    }else{
+        getRoleBtn.innerHTML = "Раздача законечена. Сгенерируйте новую колоду.";
     }
 });
 
