@@ -61,3 +61,12 @@ role.addEventListener("click", () => {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+// Раздача ролей логика end
+
+//Кнопка - как раздать роли?
+
+//Закрыть popup
+function openAndclosePopups(objectPopup){
+    document.querySelector("." + objectPopup.dataset.popups).classList.toggle("hideAndShowPopup");
+}

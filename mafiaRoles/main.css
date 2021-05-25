@@ -1,108 +1,168 @@
 body,
 html {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 * {
-    font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .container {
-    width: 1240px;
-    margin: 0 auto;
+  width: 1240px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1240px) {
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 }
 
 #mainTitle {
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
 }
-
+.buttonsMainScreen {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.buttonsMainScreen button {
+  padding: 10px 40px;
+  font-size: 25px;
+}
+@media screen and (max-width: 550px) {
+  .buttonsMainScreen button:first-child {
+    margin-bottom: 30px;
+  }
+}
 .mainScreen {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .cardRoleContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-    margin: 0 auto;
-    width: 80%;
-    border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid black;
 }
 
 @media screen and (max-width: 1240px) {
-    .cardRoleContainer {
-        min-height: 80vh;
-    }
+  .cardRoleContainer {
+    min-height: 80vh;
+  }
 }
 
 #role {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1240px) {
-    #role {
-        text-align: center;
-        font-size: 2em;
-    }
+  #role {
+    text-align: center;
+    font-size: 2em;
+  }
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 .roleSelectionContainer {
-    border: 2px solid black;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  border: 2px solid black;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #roleSelectionTitle {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 .roles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .role {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding: 20px;
 }
 
 .role span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #generatePackRoles {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.hideAndShowPopup {
+  display: none;
+}
+.exitPopup {
+  position: absolute;
+  right: 8%;
+  top: 5%;
+  color: gray;
+  font-size: 35px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-bg > * {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  position: relative;
+  transition: 0.2s ease-in-out;
+  width: 400px;
+  background-color: white;
+  border: 2px solid black;
+  z-index: 5;
+  margin: 0 auto;
+  padding: 30px;
+}
+.popupRules {
+  width: 800px;
 }
