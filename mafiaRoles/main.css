@@ -154,6 +154,7 @@ footer {
   align-items: center;
   overflow-y: scroll;
 }
+
 .popup {
   position: relative;
   transition: 0.2s ease-in-out;
@@ -165,5 +166,25 @@ footer {
   padding: 30px;
 }
 .popupRules {
-  width: 800px;
+  width: 65%;
+}
+@media screen and (max-width: 480px) {
+  .popupRules {
+    padding-top: 100vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .popupRules span {
+    top: 34%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .popupRules {
+    padding-top: 65vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .popupRules span {
+    top: 29%;
+  }
 }
