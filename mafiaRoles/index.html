@@ -25,7 +25,7 @@
         <div class="container">
             <div class="buttonsMainScreen">
                 <button id="helpBtn" class="popupHelpBtn" onclick="openAndclosePopups(this)" data-popups = "popupHelpInDistribution">Как раздать роли?</button>
-                <div class="viewRoleToScreen">
+                <div class="viewRoleToScreen" style = "margin: 30px 0px">
                     <label for="timeViewRoleToScreen">Время показа каждой роли на экране (В секундах):</label>
                     <input type="range" name="timeViewRoleToScreen" step = "1" value="3" min="1" list="timeViewRoleToScreenRangeValues" max="20" onchange="changeTimeViewRoleToScreen(this.value)">
                     <span id="timeViewRoleToScreenValue">Секунд: 3</span>
