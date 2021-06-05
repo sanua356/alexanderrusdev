@@ -45,8 +45,10 @@ role.addEventListener("click", () => { //Событие клика для пок
     if(!endOfDistributionFlag){ //Если конец показа не достигнут
         if (errorsCheck) { //Если нет ошибок
             getRoleBtn.innerHTML = "Вы: " + arrayRoles[counterVisibleRolesScreen]; //Показать очередную роль на экране
+            errorsCheck = false; //Флаг запрета клика, пока не показана старая роль
             setTimeout(() => { // Таймер показа роли на экране на определённое время
                 getRoleBtn.innerHTML = "Нажмите для получения роли"; //Скрыть роль с экрана (Поставить "заглушку через время после показа")
+                errorsCheck = true;
             }, roleShowTime);
             if (counterVisibleRolesScreen + 2 <= arrayRoles.length) {//Проверка на конец выдачи пака
                 counterVisibleRolesScreen++;//Если не конец, добавить 1 к счётчику показа ролей
@@ -55,7 +57,7 @@ role.addEventListener("click", () => { //Событие клика для пок
                 endOfDistributionFlag = true;//Поставить флаг конца показа в true
             }
         } else {//Если возники ошибки 
-            alert("Ошибка. Колода пуста или что-то пошло не так :)");
+            alert("Ошибка. Возможно: \n1.Колода для раздачи пуста. \n2.Предыдущая роль еще не пропала с экрана показа ролей. \n3.Какой-нибудь косяк разрабочика :)");
         }
     }else{//Если флаг конца показа в true
         getRoleBtn.innerHTML = "Раздача законечена. Сгенерируйте новую колоду.";
