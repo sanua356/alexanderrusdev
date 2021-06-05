@@ -25,6 +25,16 @@
         <div class="container">
             <div class="buttonsMainScreen">
                 <button id="helpBtn" class="popupHelpBtn" onclick="openAndclosePopups(this)" data-popups = "popupHelpInDistribution">Как раздать роли?</button>
+                <div class="viewRoleToScreen">
+                    <label for="timeViewRoleToScreen">Время показа каждой роли на экране (В секундах):</label>
+                    <input type="range" name="timeViewRoleToScreen" step = "1" value="3" min="1" list="timeViewRoleToScreenRangeValues" max="20" onchange="changeTimeViewRoleToScreen(this.value)">
+                    <span id="timeViewRoleToScreenValue">Секунд: 3</span>
+                    <datalist id="timeViewRoleToScreenRangeValues">
+                        <option value="1" label="1"></option>
+                        <option value="10" label="10"></option>
+                        <option value="20" label="20"></option>
+                    </datalist>    
+                </div>
                 <button id="rulesBtn" onclick="openAndclosePopups(this)" data-popups = "popupRules">Правила игры</button>
             </div>
             <div class="mainScreen">
@@ -70,7 +80,7 @@
                     <div class="role">
                         <span>Проститутка:</span>
                         <input type="number" placeholder="Количество" value="0" class="getValueSelectedRole" data-role="Проститутка">
-                    </div>
+                    </div>           
                 </div>
                 <button id="generatePackRoles">Сгенерировать колоду</button>
             </div>
@@ -112,7 +122,7 @@
             <div class="container">
                 <div class="popupRules popup">
                     <span class="exitPopup" onclick="openAndclosePopups(this)" data-popups = "popupRules">X</span>
-                    <h3>Начало игры</h3>
+                    <h4>Начало игры</h4>
                     <p>
                     Игроки по очереди смотрят свои карты, затем Ведущий объявляет о наступлении ночи. Ночь - это значит, что все игроки должны закрыть глаза (для мафклубов - закрыть лица масками).
                     </p> 
