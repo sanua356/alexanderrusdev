@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="forStalker.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Генератор обращений разработчиков</title>
+    <script src="libs/html2canvas.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="mainTitle">Генератор обращений разработчиков</h1>
+        </div>  
+    </header>
+    <section>
+        <div class="container">
+            <div class="mainScreen" id="saveResultScreen">
+                <img src="img/StalkerBG.jpg" alt="stalker Background">
+                <div class="textMainScreen">
+                    <div class="textMainScreenOutput">
+                        Сталкеры,
+                        <br />
+                        <br />
+                        Мы приняли решение перенести релиз S.T.A.L.K.E.R. 2:
+                        Сердце Чернобыля на <aside>8 декабря 2022 года.</aside>
+                        <br />
+                        <br />
+                        Эти дополнительные семь месяцев необходимы,
+                        чтобы полностью реализовать наше видение и
+                        довести игру до нужного состояния. S.T.A.L.K.E.R. 2 -
+                        самая большая игра в истории GSC
+                        соответствующими объемами работ по тестированию
+                        и полировке. Мы убеждены, что разработка игры
+                        должна идти столько, сколько потребуется: особенно
+                        в случае с таким проектом.
+                        <br />
+                        <br />
+                        Решение было непростым, но мы очень хотим
+                        подарить вам игру, которая будет соответствовать
+                        ожиданиям.
+                        <br />
+                        <br />
+                        Безусловно, впереди намного больше новостей,
+                        информации и показов: этот год будет важным и
+                        интересным. А пока что - большое спасибо вам за
+                        терпение и понимание.
+                        <br />
+                        <br />
+                        С любовью, команда GSC Game World.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="textAreaScrenTitle">Поле ввода текста: </div>
+            <div class="textAreaScreen">
+                <textarea id="textAreaScreenInput" placeholder="Сюда введите текст, который хотите вставить вместо обращения разработчиков.">
+Сталкеры,
+<br />
+<br />
+Мы приняли решение перенести релиз S.T.A.L.K.E.R. 2:
+Сердце Чернобыля на <aside>8 декабря 2022 года.</aside>
+<br />
+<br />
+Эти дополнительные семь месяцев необходимы,
+чтобы полностью реализовать наше видение и
+довести игру до нужного состояния. S.T.A.L.K.E.R. 2 -
+самая большая игра в истории GSC
+соответствующими объемами работ по тестированию
+и полировке. Мы убеждены, что разработка игры
+должна идти столько, сколько потребуется: особенно
+в случае с таким проектом.
+<br />
+<br />
+Решение было непростым, но мы очень хотим
+подарить вам игру, которая будет соответствовать
+ожиданиям.
+<br />
+<br />
+Безусловно, впереди намного больше новостей,
+информации и показов: этот год будет важным и
+интересным. А пока что - большое спасибо вам за
+терпение и понимание.
+<br />
+<br />
+С любовью, команда GSC Game World.
+</textarea>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="auxiliaryButtonsTitle">Вспомогательные кнопки:</h2>
+            <div class="auxiliaryButtons" style="flex-wrap: wrap;">
+                <div class="auxiliaryButton buttonClickable" id="newString">
+                    <article>Перенос на новую строку</article>
+                </div>
+                <div class="fontSizeRange auxiliaryButton">
+                    <article>Размер шрифта</article>
+                    <div class="fontSizeRangeValueSpan">
+                        <input type="range" min="15" max="30" value="23" id="fontSizeRange">
+                        <span id="fontSizeRangeValue">23</span>
+                    </div>
+                </div>
+                <a href="#" id="download" class="saveImg">
+                    <div class="auxiliaryButton buttonClickable" id="saveImg">
+                        <article> Сохранить готовое изображение</article>
+                    </div>
+                </a>
+                <div class="letterSpacingRange auxiliaryButton">
+                    <article>Интервал между буквами</article>
+                    <div class="letterSpacingRangeValueSpan">
+                        <input type="range" min="0" max="20" value="0" id="letterSpacingRange">
+                        <span id="letterSpacingRangeValue">0</span>
+                    </div>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="boldString">
+                    <article>Вставка текста с жирным шрифтом</article>
+                </div>
+                <div class="auxiliaryButton buttonClickable" id="largerSizeFont">
+                    <article>Вставка текста увеличенным шрифтом (например для даты переноса игры)</article>
+                </div>
+            </div>
+            <h2 class="warning">!!!Изменения в готовый файл вносятся с запозданием.!!! </br>
+                Прежде чем скачать готовую картинку подождите около 10-30 секунд после окончания набора текста. </br>
+                Эта мера нужна для увеличения скорости загрузки сайта   ;)</h2>
+                <canvas>Извините, ваш браузер не поддерживается :(</canvas>
+        </div>
+        <a href="index.html" class="goHome">На главную</a>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="infoAuthor">
+                <h3>Site created by <a href="https://vk.com/alexanderpankratov03">Alexander Pankratov</a></h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="libs/jspdf.debug.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
